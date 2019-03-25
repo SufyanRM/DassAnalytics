@@ -57,3 +57,8 @@ button.bg-primary:focus {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.text-white {
+	text-transform: uppercase;
+	margin-top: 70px !important;
+}
