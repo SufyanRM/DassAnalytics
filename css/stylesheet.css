@@ -62,3 +62,18 @@ button.bg-primary:focus {
 	text-transform: uppercase;
 	margin-top: 70px !important;
 }
+
+.text-white-50 {
+font-size: 20px; 
+color: white !important;
+}
+
+hr.divider {
+    max-width: 3.25rem;
+    border-width: .2rem;
+    border-color: #f4623a;
+}
+
+.text-muted {
+	margin-top: 20px !important;
+}
