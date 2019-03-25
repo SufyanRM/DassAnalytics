@@ -1,131 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>DASS Analytics - Insights for You</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-  <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
-  <link rel="icon" type="image/png" href="img/1.png">
-</head>
-<body>
-<!-- Navbar start -->
-<nav class="navbar navbar-expand-md navbar-dark fixed-top">
-  <a class="navbar-brand" href="#">
-    <img src="img/1.png" alt="Logo">
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link active" href="#">home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">about</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">services</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">clients</a>
-      </li>    
-      <li class="nav-item">
-        <a class="nav-link" href="#">blog</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">contact</a>
-      </li>
-    </ul>
-  </div>  
-</nav>
-<!-- Navbar end -->
+    <head>
+        <title>DASS Analytics - Insights for You</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+        <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+        <link rel="icon" type="image/png" href="img/1.png">
+        <link rel="stylesheet" type="text/css" href="css/minimal_stylesheet.min.css">
+    </head>
+    <body>
+        <!-- Navbar start -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+            <a class="navbar-brand" href="#">
+            <img src="img/1.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto" id="myNavbar">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#clients">clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Navbar end -->
+        <!-- Carousel start -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" id="home">
+                <div class="carousel-item active">
+                    <div class="carousel-caption d-none d-md-block opp">
+                        <h3>Take Your Business To The Next Level</h3>
+                        <p>With our advanced Data Analytics dashboard, you could increase your product sales up to 25%</p>
+                    </div>
+                    <img class="d-block w-100" src="img/1.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-caption d-none d-md-block opp">
+                        <h3>Secure your financial data</h3>
+                        <p>With our advanced methodologies and practices cater into a product, you can predict which customer could be Fraudulent.</p>
+                    </div>
+                    <img class="d-block w-100" src="img/2.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-caption d-none d-md-block opp">
+                        <h3>Preserve the Nature</h3>
+                        <p>Our Data Analytics dashboard shows that the world is at the risk of Deforestation!</p>
+                    </div>
+                    <img class="d-block w-100" src="img/3.jpg" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- Carousel end -->
 
-<!-- Carousel start -->
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <div class="carousel-caption d-none d-md-block opp">
-        <h3>Take Your Business To The Next Level</h3>
-        <p>With our advanced Data Analytics dashboard, you could increase your product sales up to 25%</p>
+  <!-- About Section -->
+  <section class="page-section bg-primary bg" id="about">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="text-white mt-0">Who are we?</h2>
+          <hr class="divider light my-4">
+          <p class="text-white-50 mb-4">Dass Anaytics is the pioneer when it comes to Data Analytics. With our immense experience and our huge Clientbase and our emerging potential, We've mastered the art of Data Analytics and Visualization using Different opensource platforms such as Data driven Documents and various others to our need possible.</p>
+          <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
+        </div>
       </div>
-      <img class="d-block w-100" src="img/1.jpg" alt="First slide">
-    </div>
-    <div class="carousel-item">
-      <div class="carousel-caption d-none d-md-block opp">
-        <h3>Secure your financial data</h3>
-        <p>With our advanced methodologies and practices cater into a product, you can predict which customer could be Fraudulent.</p>
-      </div>
-      <img class="d-block w-100" src="img/2.jpg" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <div class="carousel-caption d-none d-md-block opp">
-        <h3>Preserve the Nature</h3>
-        <p>Our Data Analytics dashboard shows that the world is at the risk of Deforestation!</p>
-      </div>
-      <img class="d-block w-100" src="img/3.jpg" alt="Third slide">
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-<!-- Carousel end -->
+  </section>
 
-<!-- Services start -->
-  <!-- Services -->
   <section id="services">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Services</h2>
-          <h3 class="section-subheading text-muted">What We Do</h3>
+          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
         </div>
       </div>
       <div class="row text-center">
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
-            <img src="img/analytics.png" alt="analytics">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
           </span>
-          <h4 class="service-heading">Data Analytics</h4>
-          <p class="text-muted">We Provide Cutting Edge Data Analytics Service For Your Business In Order To Gain Insights.</p>
+          <h4 class="service-heading">E-Commerce</h4>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
-            <img src="img/bank.png" alt="bank">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
           </span>
-          <h4 class="service-heading">Bank Fraudulent Prediction</h4>
-          <p class="text-muted">DASS Analytics Provides Bank Fraudulent Prediction, Bring In Your Data And We'll Know What To Do, With A Success Rate Of 85%.</p>
+          <h4 class="service-heading">Responsive Design</h4>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
-            <img src="img/target.png" alt="target">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
           </span>
-          <h4 class="service-heading">Target Marketing</h4>
-          <p class="text-muted">DASS Analytics Uses Clustering In Order To Target Customers Belonging To A Particular Group.</p>
+          <h4 class="service-heading">Web Security</h4>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
         </div>
       </div>
     </div>
   </section>
 
 
-<!-- Services end -->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/creative.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add scrollspy to <body>
+  $('body').scrollspy({target: ".navbar", offset: 50});   
 
+  // Add smooth scrolling on all links inside the navbar
+  $("#myNavbar a").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
 
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/popper.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-</body>
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    }  // End if
+  });
+});
+</script>
+    </body>
 </html>

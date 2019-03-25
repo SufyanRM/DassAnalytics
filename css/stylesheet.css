@@ -26,3 +26,34 @@
   background: rgba(0, 0, 0, 0.75);
   color: white;
 }
+
+.page-section {
+  padding: 8rem 0;
+}
+
+.bg-primary {
+  background-color: #171717 !important;
+}
+
+a.bg-primary:hover, a.bg-primary:focus,
+button.bg-primary:hover,
+button.bg-primary:focus {
+  background-color: #ee3e0d !important;
+}
+
+.justify-content-center {
+  -webkit-box-pack: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("../img/nyBreath-crop3.gif");
+  /* Full height */
+  height: 100vh;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
