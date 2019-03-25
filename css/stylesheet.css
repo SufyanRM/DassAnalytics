@@ -77,3 +77,36 @@ hr.divider {
 .text-muted {
 	margin-top: 20px !important;
 }
+
+/*blog style*/
+
+.blog{
+	margin: 4em 0;
+	position: relative;	
+}
+.blog h1{
+	color:#42355d;
+	margin: 2em;	
+}
+.blog .card{
+	box-shadow: 0 0 20px #ccc;
+}
+.blog .card img{
+	width: 100%;
+	height: 12em;
+}
+@media and (max-width: 768px){
+ .team .item img{
+ 	width: 100%;
+ }	
+}
+.blog .card-title{
+	color: black
+	 
+}
+.blog .card-text{
+	color:black;
+}
+.blog .card-body{
+	padding: 1em;
+}
