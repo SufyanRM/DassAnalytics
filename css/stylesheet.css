@@ -31,6 +31,47 @@
   padding: 8rem 0;
 }
 
+
+.team-member {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.team-member img {
+  width: 225px;
+  height: 225px;
+  border: 7px solid #fff;
+}
+
+.team-member h4 {
+  margin-top: 25px;
+  margin-bottom: 0;
+  text-transform: none;
+}
+
+.team-member p {
+  margin-top: 0;
+}
+
+
+ul.social-buttons {
+  margin-bottom: 0;
+}
+
+ul.social-buttons li a {
+  font-size: 20px;
+  line-height: 60px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  color: white;
+  border-radius: 100%;
+  outline: none;
+  background-color: #212529;
+}
+
 .bg-primary {
   background-color: #171717 !important;
 }
@@ -137,4 +178,26 @@ hr.divider {
 .fa-linkedin:hover {
   color: #0077b5;
   transition: 0.3s;
+}
+
+.logo-text {
+  color: white;
+  font-size: 26px
+}
+
+.fa-linkedin-in:hover {
+  color: #0077b5;
+  transition: 0.3s;
+}
+
+h2{
+  text-align:center;
+  padding: 20px;
+}
+
+
+.contact-section {
+    font-size:40px;
+    margin-top:0;
+    margin-bottom: 30px;
 }
