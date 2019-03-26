@@ -1,263 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>DASS Analytics - Insights for You</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="css/all.min.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-        <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
-        <link rel="icon" type="image/png" href="img/1.png">
-        <link rel="stylesheet" type="text/css" href="css/minimal_stylesheet.min.css">
-    </head>
-    <body>
-        <!-- Navbar start -->
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-            <a class="navbar-brand" href="#">
+
+<head>
+    <title>DASS Analytics - Insights for You</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/1.png">
+    <link rel="stylesheet" type="text/css" href="css/minimal_stylesheet.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+    integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+    crossorigin=""/>
+</head>
+
+<body>
+
+    <!-- Navbar start -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <a class="navbar-brand" href="index.html">
             <img src="img/1.png" alt="Logo">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav ml-auto" id="myNavbar">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">about</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#clients">clients</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#blog">blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">contact</a>
-                    </li>
-                </ul>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto" id="myNavbar">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">about</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#clients">clients</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#blog">blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Carousel start -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" id="home">
+            <div class="carousel-item active">
+                <div class="carousel-caption d-none d-md-block opp">
+                    <h3>Take Your Business To Next Level</h3>
+                    <p>With our advanced Data Analytics dashboard, you could increase your product sales up to 25%</p>
+                </div>
+                <img class="d-block w-100" src="img/1.jpg" alt="First slide">
             </div>
-        </nav>
-        <!-- Navbar end -->
-        <!-- Carousel start -->
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner" id="home">
-                <div class="carousel-item active">
-                    <div class="carousel-caption d-none d-md-block opp">
-                        <h3>Take Your Business To Next Level</h3>
-                        <p>With our advanced Data Analytics dashboard, you could increase your product sales up to 25%</p>
-                    </div>
-                    <img class="d-block w-100" src="img/1.jpg" alt="First slide">
+            <div class="carousel-item">
+                <div class="carousel-caption d-none d-md-block opp">
+                    <h3>Secure your financial data</h3>
+                    <p>With our advanced methodologies and practices cater into a product, you can predict which customer could be Fraudulent.</p>
                 </div>
-                <div class="carousel-item">
-                    <div class="carousel-caption d-none d-md-block opp">
-                        <h3>Secure your financial data</h3>
-                        <p>With our advanced methodologies and practices cater into a product, you can predict which customer could be Fraudulent.</p>
-                    </div>
-                    <img class="d-block w-100" src="img/2.jpg" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                    <div class="carousel-caption d-none d-md-block opp">
-                        <h3>Preserve the Nature</h3>
-                        <p>Our Data Analytics dashboard shows that the world is at the risk of Deforestation!</p>
-                    </div>
-                    <img class="d-block w-100" src="img/3.jpg" alt="Third slide">
-                </div>
+                <img class="d-block w-100" src="img/2.jpg" alt="Second slide">
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <div class="carousel-item">
+                <div class="carousel-caption d-none d-md-block opp">
+                    <h3>Preserve the Nature</h3>
+                    <p>Our Data Analytics dashboard shows that the world is at the risk of Deforestation!</p>
+                </div>
+                <img class="d-block w-100" src="img/3.jpg" alt="Third slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
             </a>
-        </div>
-        <!-- Carousel end -->
-
-  <!-- About Section -->
-  <section class="page-section bg-primary bg" id="about">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8 text-center">
-          <h2 class="text-white mt-0 opp">Who are we?</h2>
-          <hr class="divider light my-4">
-          <p class="text-white-50 mb-4">Dass Anaytics is the pioneer when it comes to Data Analytics. With our immense experience and our huge Clientbase and our emerging potential, We've mastered the art of Data Analytics and Visualization using Different opensource platforms such as Data driven Documents and various others to our need possible.</p>
-          <a class="btn btn-light btn-xl" href="#services">Get Started!</a>
-        </div>
-      </div>
-  </section>
-
-  <section id="services">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Services</h2>
-          <hr class="divider my-4">
-        </div>
-      </div>
-      <div class="row text-center">
-        <div class="col-md-4">
-          <img src="img/analytics.png" class="rounded-circle" alt="Data Analytics">
-          <h4 class="service-heading">Data Analytics</h4>
-          <p class="text-muted">We provide cutting edge Data Analytics service for your business In order to gain Insights for your decision making.</p>
-        </div>
-        <div class="col-md-4">
-          <img src="img/bank.png" class="rounded-circle" alt="Fraud Detection">
-          <h4 class="service-heading">Bank Fraudulent Prediction</h4>
-          <p class="text-muted">DASS Analytics Provides Bank Fraudulent Prediction, Bring In Your Data And We'll Know What To Do, With A Success Rate Of 85%.</p>
-        </div>
-        <div class="col-md-4">
-          <img src="img/target.png" class="rounded-circle" alt="Target Marketing">
-          <h4 class="service-heading">Target Marketing</h4>
-          <p class="text-muted">DASS Analytics Uses Clustering In Order To Target Customers Belonging To A Particular Group.</p>
-        </div>
-      </div>
     </div>
-  </section>
+    <!-- Carousel end -->
 
-<div class="blog" id="clients">
-  <div class="container">
-  <h1 class="text-center clienttext">Clients</h1>
-    <div class="row">
-      <div class="col-md-4 col-lg-4 col-sm-12">
-        <div class="card">
-          <div class="card-img">
-            <img src="img/sky.png" class="img-fluid">
-          </div>
-          
-          <div class="card-body">
-          <h4 class="card-title">Dass Analytics Collaborates With Sky Sports</h4>
-            <p class="card-text">
-              Sky Sports' Spokesman said : "We're Delighted to have Dass Analytics On Board!"
-            </p>
-          </div>
-          <div class="card-footer">
-            <a href="" class="card-link">Read more</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-lg-4 col-sm-12">
-        <div class="card">
-          <div class="card-img">
-            <img src="img/af.png" class="img-fluid">
-          </div>
-          
-          <div class="card-body">
-             <h4 class="card-title">Dass Analytics Collaborates With Afiniti To Pair Better</h4>
-            <p class="card-text">
-              Initiative is to take Artificial Intelligence to the next level,
-            </p>
-          </div>
-          <div class="card-footer">
-            <a href="" class="card-link">Read more</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-lg-4 col-sm-12">
-        <div class="card">
-          <div class="card-img">
-            <img src="img/PL.png" class="img-fluid">
-          </div>
-          
-          <div class="card-body">
-          <h4 class="card-title">Dass Analytics Signs a New Contract With PL</h4>
-            <p class="card-text">
-              We're excited to announce Premier League as our new Sponsor! 
-            </p>
-          </div>
-          <div class="card-footer">
-            <a href="" class="card-link">Read more</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+    <!-- About Section -->
+    <section class="page-section bg-primary bg" id="about">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="text-white mt-0 opp">Who are we?</h2>
+                    <p class="text-white-50 mb-4">Dass Anaytics is the pioneer when it comes to Data Analytics. With our immense experience and our huge Clientbase and our emerging potential, We've mastered the art of Data Analytics and Visualization using Different opensource platforms
+                        such as Data driven Documents and various others to our need possible.</p>
+                    <a class="btn btn-light btn-xl" href="#services">Get Started!</a>
+                </div>
+            </div>
+    </section>
 
-
-
-  <footer id="contact" style="background-color: #171717;margin-top : 100px !important;">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <span class="copyright" style="color: white;">Copyright &copy; DASS Analytics 2019</span>
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase">Services</h2>
+                    <hr class="divider my-4">
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <img src="img/analytics.png" class="rounded-circle" alt="Data Analytics">
+                    <h4 class="service-heading">Data Analytics</h4>
+                    <p class="text-muted">We provide cutting edge Data Analytics service for your business In order to gain Insights for your decision making.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/bank.png" class="rounded-circle" alt="Fraud Detection">
+                    <h4 class="service-heading">Bank Fraudulent Prediction</h4>
+                    <p class="text-muted">DASS Analytics Provides Bank Fraudulent Prediction, Bring In Your Data And We'll Know What To Do, With A Success Rate Of 85%.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/target.png" class="rounded-circle" alt="Target Marketing">
+                    <h4 class="service-heading">Target Marketing</h4>
+                    <p class="text-muted">DASS Analytics Uses Clustering In Order To Target Customers Belonging To A Particular Group.</p>
+                </div>
+            </div>
         </div>
-        <div class="col-md-4">
-          <ul class="list-inline social-buttons">
-            <li class="list-inline-item">
-              <a href="#">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <ul class="list-inline quicklinks">
-            <li class="list-inline-item">
-              <a href="#" style="color:white !important;">Privacy Policy</a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#" style="color:white !important;">Terms of Use</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
+    </section>
 
+<!-- Footer -->
+        <!-- Footer -->
+        <footer>
+          <div class="footer-top">
+            <div class="container">
+              <div class="row">
+<!--                 <div class="col-md-3 footer-about wow fadeInUp">
+                  <img class="logo-footer" src="assets/img/logo.png" alt="logo-footer" data-at2x="assets/img/logo.png">
+                  <p>
+                    We are a young company always looking for new and creative ideas to help you with our products in your everyday work.
+                  </p>
+                  <p><a href="#">Our Team</a></p>
+                </div> -->
+                <div class="col-md-6 footer-contact wow fadeInDown">
+                  <h3>Contact</h3>
+                      <p><i class="fas fa-map-marker-alt"></i> Centre Point, Expressway Qayyumabad, Karachi<br><span style="margin-left: 26px;"> Karachi City, Sindh 75500</span></p>
+                      <p><i class="fas fa-phone"></i> Phone: (0039) 111 32 98 997</p>
+                      <p><i class="fas fa-envelope"></i> Email: <a href="mailto:hello@dassanalytics.com">hello@dassanalytics.com</a></p>
+                </div>
+                    <div class="col-md-6">
+                   <div id="mapid"></div>
+                </div>
+                </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="container">
+              <div class="row">
+                  <div class="col-md-8 footer-copyright">
+                        &copy; Copyright 2019 DASS Analytics. All Rights Reserved.</a>
+                      </div>
+                  <div class="col-md-4 footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a> 
+              <a href="#"><i class="fab fa-twitter"></i></a> 
+              <a href="#"><i class="fab fa-google-plus-g"></i></a> 
+              <a href="#"><i class="fab fa-instagram"></i></a> 
+              <a href="#"><i class="fab fa-pinterest"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+                      </div>
+                </div>
+            </div>
+          </div>
+        </footer>
+  <!-- Footer -->
 
-        <script type="text/javascript" src="js/jquery.min.js"></script>
-        <script type="text/javascript" src="js/popper.min.js"></script>
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/creative.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+ <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+   integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+   crossorigin=""></script>
+    <script>
+        $(document).ready(function(){
+          // Add scrollspy to <body>
+          $('body').scrollspy({target: ".navbar", offset: 50});   
+        
+          // Add smooth scrolling on all links inside the navbar
+          $("#myNavbar a").on('click', function(event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+        
+              // Store hash
+              var hash = this.hash;
+        
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+           
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            }  // End if
+          });
+        });
+    </script>
 <script>
-$(document).ready(function(){
-  // Add scrollspy to <body>
-  $('body').scrollspy({target: ".navbar", offset: 50});   
 
-  // Add smooth scrolling on all links inside the navbar
-  $("#myNavbar a").on('click', function(event) {
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
+  var mymap = L.map('mapid').setView([24.8350182, 67.0332348], 13);
 
-      // Store hash
-      var hash = this.hash;
+  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoic3VmeWFucm0iLCJhIjoiY2p0cHZpOXR1MDgzcjRkazBjcXBzeGJvOSJ9.Zv-voIxbTq5WW28JFiNXeg', {
+    maxZoom: 18,
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+      '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+      'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    id: 'mapbox.streets'
+  }).addTo(mymap);
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    }  // End if
-  });
-});
+  L.marker([24.8350182, 67.0332348]).addTo(mymap)
+    .bindPopup("<b>DASS Analytics").openPopup();
+
+  var popup = L.popup();
+
+  function onMapClick(e) {
+    popup
+      .setLatLng(e.latlng)
+      .setContent("You clicked the map at " + e.latlng.toString())
+      .openOn(mymap);
+  }
+
+  mymap.on('click', onMapClick);
+
 </script>
-    </body>
+</body>
+
 </html>
